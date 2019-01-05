@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<form method="post" action="New">
+    <label>Name</label>
+    <br />
+    <input type="text" name="name" />
+    <br /><br />
+    <label>Email</label>
+    <br />
+    <input type="text" name="email" />
+    <br /><br />
+    <label>Password</label>
+    <br />
+    <input type="text" name="password" />
+    <br /><br />
+    <button type="submit">Add</button>
+</form>

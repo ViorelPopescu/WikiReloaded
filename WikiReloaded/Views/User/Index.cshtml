@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>User pane</h2>
+@foreach (var user in ViewBag.Users)
+{
+    <h4>@user.name</h4>
+    <p>@user.Id</p>
+    <p>@user.email</p>
+    <p>@user.role</p>
+    <br />
+    <hr />
+    <br />
+}
+<form action="/User/New">
+    <input type="submit" value="Log in" />
+</form>
+<form action="/User/New">
+    <input type="submit" value="Sign up" />
+</form>
